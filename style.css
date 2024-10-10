@@ -40,11 +40,24 @@ header >nav> a{
     font-weight: 900;
     margin: 0 20px;
     cursor: pointer;
+    transition: ease 0.6s;
+    padding-bottom: 10px;
+    border-bottom: none;
+}
+
+header> nav> a:hover{
+    border-bottom: 5px solid rgb(110, 8, 189);
+    border-radius: 10px;
 }
 
 header>nav>h1{
     font-size: 3.5rem;
     cursor: pointer;
+    transition: ease 0.6s;
+}
+
+header>nav>h1:hover{
+    color: #7168c6;
 }
 
 .inputForm {
@@ -288,4 +301,69 @@ header>nav>h1{
     h2 {
         font-size: 2.5rem;
     }
+}
+
+
+
+/* Styling for burger menu */
+.burger {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+}
+
+.burger span {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hidden by default on small devices */
+        flex-direction: column;
+        align-items: center;
+        background-color: #514bd3;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    .nav-links.show {
+        display: flex; /* Show when burger is clicked */
+    }
+
+    .burger {
+        display: flex; /* Visible only on small screens */
+        justify-content: center;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+}
+
+/* Burger animation */
+.burger.open span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+
+.burger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.open span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
 }
