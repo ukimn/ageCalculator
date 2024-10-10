@@ -18,7 +18,10 @@ burger.addEventListener('click', () => {
 submitButton.addEventListener('click', function(){
     let age = Number(inputForm.value);
 
-    const meladi = 2024 - age;
+    let date = new Date();
+    let mDate = date.getFullYear()
+
+    const meladi = mDate - age;
     const hijri = 1446 - age;
 
     pOne.textContent = meladi;
