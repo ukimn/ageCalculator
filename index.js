@@ -24,8 +24,8 @@ submitButton.addEventListener('click', function(){
     const meladi = mDate - age;
     const hijri = 1446 - age;
 
-    pOne.textContent = meladi;
-    pTwo.textContent = hijri;
+    pOne.textContent = hijri;
+    pTwo.textContent = meladi;
 })
 
 deleteButton.addEventListener('click', function(){
