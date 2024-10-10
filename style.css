@@ -125,8 +125,140 @@ h2 {
     }
 }
 
-@media (max-width: 390px){
-    .inputForm{
-        width: 100px;
+/* For iPhone 12 (portrait) */
+@media (min-width: 390px) and (max-width: 844px) and (orientation: portrait) {
+    .card {
+        padding: 20px;
+        width: 85%;
+    }
+
+    .inputForm {
+        width: 300px;
+        font-size: 1.8rem;
+        padding: 10px;
+    }
+
+    .submit-button, .delete-button {
+        font-size: 1.6rem;
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+/* For iPhone 12 (landscape) */
+@media (min-width: 844px) and (max-width: 390px) and (orientation: landscape) {
+    .card {
+        padding: 15px;
+        width: 70%;
+    }
+
+    .inputForm {
+        width: 350px;
+        font-size: 1.5rem;
+        padding: 8px;
+    }
+
+    .submit-button, .delete-button {
+        font-size: 1.4rem;
+        padding: 6px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Extra small devices (phones, 320px - 479px) */
+@media (max-width: 479px) {
+    .card {
+        padding: 10px;
+        width: 90%;
+    }
+
+    .inputForm {
+        width: 250px;
+        font-size: 1.5rem;
+        padding: 8px;
+    }
+
+    .submit-button, .delete-button {
+        font-size: 1.3rem;
+        padding: 6px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Small devices (phones, 480px - 767px) */
+@media (min-width: 480px) and (max-width: 767px) {
+    .card {
+        padding: 20px;
+        width: 85%;
+    }
+
+    .inputForm {
+        width: 280px;
+        font-size: 1.7rem;
+        padding: 10px;
+    }
+
+    .submit-button, .delete-button {
+        font-size: 1.6rem;
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Medium devices (tablets, 768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .card {
+        padding: 25px;
+        width: 75%;
+    }
+
+    .inputForm {
+        width: 320px;
+        font-size: 2rem;
+        padding: 12px;
+    }
+
+    .submit-button, .delete-button {
+        font-size: 1.8rem;
+        padding: 9px;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Large devices (desktops, laptops, min-width: 1024px) */
+@media (min-width: 1024px) {
+    .card {
+        padding: 30px;
+        width: 50%;
+    }
+
+    .inputForm {
+        width: 350px;
+        font-size: 2.3rem;
+        padding: 14px;
+    }
+
+    .submit-button, .delete-button {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
     }
 }
